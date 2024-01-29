@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="header_logo">Such<span>i</span>t</a>
+        <div class="nav_menu">
+            <ul class="nav_list">
+                <li> <a class="nav_link active_link" href="#home">Home</a></li>
+                <li> <a class="nav_link " href="#about" >About</a></li>
+                <li> <a class="nav_link " href="#projects">Projects</a></li>
+                <li> <a class="nav_link " href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav_close" id="nav_close">
+                <i class="ui uil-times"></i>
+            </div>
+        </div>
+
+        <div class="nav_socials">
+            <a class="nav_socials_link" href="https://www.instagram.com/suchitsharma_/" target="_blank">
+                <i class="uil uil-instagram"></i>
+            </a>
+
+            <a class="nav_socials_link" href="https://www.linkedin.com/in/suchit-sharma-465ba1251/" target="_blank">
+                <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a class="nav_socials_link" href="https://github.com/suchitsharma2004" target="_blank">
+                <i class="uil uil-github"></i>
+            </a>
+
+    </div>
+
+    <div class="nav_btns">
+    <a class="nav_link_btn btn" href="#contact" >Let's Talk</a>
+
+<!-- <div class="nav_toggle" id="nav_toggle">
+    <i class="uil uil-bars"></i>
+</div> -->
+</div>
+
+    </nav>
+</header>
+
+
+    <!-- /////////////////////////////MAIN?///////////////////////// -->
     <div class="main">
 
         <section class="home" id="home">
@@ -29,7 +72,7 @@
                     <p class="about_description">Pursuing a BTech in Computer Science and Technology with an overall 9+ GPA. I specialize in Data Science, Machine Learning, and Deep Learning, experienced in utilizing Data Science libraries and implementing machine learning models. I am skilled in image classification through Deep Learning techniques. Being a part of the AI society and CSI, I also conduct research in the field of artificial intelligence and deep learning, particularly Computer Vision.</p>
                     
                     <div class="tabs_btns">
-                        <span class="tab_btn active_tab" data-target="#skills">Skills</span>
+                        <span class="tab_btn active_tab" data-target="#skills" >Skills</span>
                         <span class="tab_btn" data-target="#experience">Experience</span>
                         <span class="tab_btn" data-target="#research">Research</span>
                         <span class="tab_btn" data-target="#education">Education and Courses</span>
@@ -127,7 +170,7 @@
                         Also allows you to book doctor appointments with the doctors registered on the app. 
                         </p>
                     </div>
-                </div>
+                </div>                
 
                 <div class="portfolio_item">
                     <img src="src/img/airline_img.jpg" alt="" class="portfolio_img">
@@ -154,9 +197,66 @@
             </div>
 
         </section>
+        <!-- ///////////////////////Contact///////////////////// -->
+
+        <section class="contact"  section id="contact">
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <h2 class="contact_title">Hire Me</h2>
+                    <p class="contact_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi corporis  phone no. <a href="tel:+919311294119">+91-9311294118</a> or email: <a href="mailto:suchit.sharma.delhi@gmail.com">suchit.sharma.delhi@gmail.com</a></p>
+
+                    <form class="contact_form" id="contact-form">
+                        <div class="contact_form-input" >
+                            <input class="contact_input" id="contact-name" type="text" name="name" placeholder="Your Name *">
+                        </div>
+
+                        <div class="contact_form-input">
+                            <input class="contact_input" id="contact-email" type="email" name="email" placeholder="Your email *">
+                        </div>
+
+                        <div class="contact_form-input">
+                            <input class="contact_input" id="contact-subject" type="text" name="subject" placeholder="Write your subject *">
+                        </div>
+
+                        <div class="contact_form-input textarea">
+                            <textarea class="contact_input" name="message"
+                            id="contact-message"
+                            placeholder="Your message *"
+                            name="message" ></textarea>  
+                        </div>
+
+                        <input class="btn" type="submit" value="Submit">
+                        <p class="error_message" id="error-message"></p>
+                    </form>
+                </div>
+                <img src="src/img/aboutimg2.jpg" alt="" class="contact_img">
+            </div>
+        </section>
 
     </div>
+
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <a href="index.html" class="footer_logo">Such<span>i</span>t</a>
+
+            <div class="footer_socials">
+                <a class="footer_socials_link" href="https://www.instagram.com/suchitsharma_/" target="_blank">
+                    <i class="uil uil-instagram"></i>
+                </a>
     
+                <a class="footer_socials_link" href="https://www.linkedin.com/in/suchit-sharma-465ba1251/" target="_blank">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+    
+                <a class="footer_socials_link" href="https://github.com/suchitsharma2004" target="_blank">
+                    <i class="uil uil-github"></i>
+                </a>
+        </div>
+        <p class="footer_copyright">&copy; 2024.   All rights reserved.</p>
+    </footer>
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="src/main.js"></script>
 </body>
