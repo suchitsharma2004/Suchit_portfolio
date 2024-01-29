@@ -246,6 +246,9 @@ border: none;
     transition: all 2s var(--transition);
 }
 
+.project_link:hover{
+    color:white;
+}
 
 .portfolio_data{
     inset-inline: 2rem;
